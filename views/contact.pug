@@ -1,0 +1,41 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+            include ../dist/css/main.min.css
+        title Contact 
+    body 
+        header 
+            div.menu-btn 
+                span.menu-btn__burger
+
+            nav.nav 
+                ul.menu-nav 
+                    li.menu-nav__item 
+                        a(href="/").menu-nav__link Home
+                    li.menu-nav__item
+                        a(href="services").menu-nav__link Our Services
+                    li.menu-nav__item.active
+                        a(href="contact").menu-nav__link Contact us 
+
+        main 
+            section.contact 
+                h2 Contact Me... 
+                div.contact__list 
+                    div.contact__email Email 
+                        div.text-secondary email@email.com 
+                    
+                    div.contact__phone Phone 
+                        div.text-secondary 090999999299 
+
+                    div.contact__address Address  
+                        div.text-secondary 3, First street, Vi, Lagos.
+
+
+                        
+        include footer.pug 
+
+        script 
+            include ../dist/js/main.js 

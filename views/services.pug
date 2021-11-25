@@ -1,0 +1,69 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+            include ../dist/css/main.min.css
+        title Services
+    body 
+        header 
+            div.menu-btn 
+                span.menu-btn__burger
+
+            nav.nav 
+                ul.menu-nav 
+                    li.menu-nav__item 
+                        a(href="/").menu-nav__link Home
+                    li.menu-nav__item.active
+                        a(href="services").menu-nav__link Our Services
+                    li.menu-nav__item
+                        a(href="contact").menu-nav__link Contact us 
+
+        main 
+            section.projects 
+                div.projects__bio-image 
+                    h1.text-secondary Projects
+
+                div.projects__items 
+                    div.projects__item 
+                        img(src=image1 ,alt="My Projects")
+                        div.projects__btns 
+                            a(href="#").projects__btn preview 
+                            a(href="#").projects__btn Github  
+
+                    div.projects__item 
+                        img(src=image2 ,alt="My Projects")
+                        div.projects__btns 
+                            a(href="#").projects__btn preview 
+                            a(href="#").projects__btn Github  
+                        
+                    div.projects__item 
+                        img(src=image3 ,alt="My Projects")
+                        div.projects__btns 
+                            a(href="#").projects__btn preview 
+                            a(href="#").projects__btn Github  
+
+                    div.projects__item 
+                        img(src=image4 ,alt="My Projects")
+                        div.projects__btns 
+                            a(href="#").projects__btn preview 
+                            a(href="#").projects__btn Github  
+
+                
+                    div.projects__item 
+                        img(src=image5 ,alt="My Projects")
+                        div.projects__btns 
+                            a(href="#").projects__btn preview 
+                            a(href="#").projects__btn Github  
+
+                    div.projects__item 
+                        img(src=image6 ,alt="My Projects")
+                        div.projects__btns 
+                            a(href="#").projects__btn preview 
+                            a(href="#").projects__btn Github  
+
+        include footer.pug 
+
+        script 
+            include ../dist/js/main.js 
